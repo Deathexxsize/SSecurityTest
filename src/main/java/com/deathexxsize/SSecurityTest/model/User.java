@@ -22,6 +22,6 @@ public class User {
     private String username;
     private String password;
 
-    @Enumerated
-    private Role role;
+    @Enumerated(EnumType.STRING)
+    private Role role = Role.USER;
 }
